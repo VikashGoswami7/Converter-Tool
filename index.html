@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter Tool</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" href="./favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header-section -->
+
+    <div class="header">
+      <img src="./img/logo.png" alt="" />
+    </div>
+
+    <!-- Intro-Section -->
+
+    <div class="intro-section">
+
+      <div class="intro-left">
+        <img src="./img/e-img.png" alt="" srcset="" />
+      </div>
+
+      <div class="intro-right">
+        <div class="intro-text">
+          <p>Welcome to <span>Tool By Vikash</span></p>
+          <p>CONVERT COLUMN DATA TO SEPARATED TEXT WITH COMMA</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- COLUMN TO COMMA CONVERTER -->
+
+    <div class="converter">
+
+      <div class="heading">
+        <p>CONVERT COLUMN TO COMMA SEPARATED LIST</p>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+
+      <div class="inputbox">
+        <textarea
+          placeholder="Enter (or paste) your column of data here"
+          id="input"
+          class="input-text"
+          onkeyup="convertText()"
+        ></textarea>
+        <textarea
+          placeholder="Your comma separated list of data will appear here"
+          id="output"
+          class="output-text"
+        ></textarea>
+      </div>
+
+      <div class="guide-text">
+
+        <div class="l-text">
+          <p>USE THIS TOOL TO CONVERT A COLUMN INTO A COMMA SEPARATED LIST</p>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="r-text">
+          <ol>
+            <li>Copy your column of text in Excel</li>
+            <li>Paste the column here (into the leftmost textbox)</li>
+            <li>Copy your comma separated list from the rightmost textbox</li>
+            <li>Paste your comma separated list wherever you wish</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section-->
+    <div class="footer">
+      <p><i class="fa-regular fa-copyright"></i> Created By Vikash Goswami</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
